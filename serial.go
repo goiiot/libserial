@@ -71,6 +71,11 @@ func (s *SerialPort) Flush() error {
 	return s.flush()
 }
 
+// File returns the underlying file handler for this serial port
+func (s *SerialPort) File() *os.File {
+	return s.f
+}
+
 // Open serial port
 func Open(device string, options ...Option) (*SerialPort, error) {
 	if device == "" {
