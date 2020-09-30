@@ -1,3 +1,5 @@
 module github.com/goiiot/libserial
 
-require golang.org/x/sys v0.0.0-20181031143558-9b800f95dbbc
+go 1.15
+
+require golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f

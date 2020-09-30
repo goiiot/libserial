@@ -6,7 +6,6 @@
 /.test
 
 coverage.txt
-go.sum
 
 *.pid
 *.out

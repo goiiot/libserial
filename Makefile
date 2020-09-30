@@ -272,21 +272,6 @@ ensure:
 	$(GO) mod download
 
 #
-# Image build
-#
-TAG ?= $(BINARY):latest
-CONTEXT ?= .
-DOCKERFILE ?= Dockerfile
-
-.PHONY: image run_image
-
-image:
-	$(DOCKER) build -t $(TAG) -f $(DOCKERFILE) $(CONTEXT)
-
-run_image:
-	$(DOCKER) run --rm -it $(TAG)
-
-#
 # Cleanup
 #
 
