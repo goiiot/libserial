@@ -7,9 +7,8 @@ os:
   - windows
 
 go:
-  - 1.9.x
-  - 1.10.x
-  - 1.11.x
+  - 1.14.x
+  - 1.15.x
 
 matrix:
   allow_failures:
